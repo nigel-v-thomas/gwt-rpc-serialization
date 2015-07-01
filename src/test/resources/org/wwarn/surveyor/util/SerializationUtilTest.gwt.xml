@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to="SerializationUtilTest">
+  <!-- Inherit our applications main module.                      -->
+    <inherits name='com.google.gwt.user.User'/>
+    <inherits name="com.seanchenxi.gwt.storage.Storage"/>
+    <!--<set-property name="storage.cache" value="false" />-->
+    <!--<set-configuration-property name="storage.type.finder" value="mix" />-->
+    <!--<source path='client'/>-->
+    <!--<source path="shared" />-->
+</module>
