@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module rename-to='SerializationUtil'>
-  <!-- Inherit the core Web Toolkit stuff.                        -->
-  <inherits name='com.google.gwt.user.User'/>
+    <!-- Inherit the core Web Toolkit stuff.                        -->
+    <inherits name='com.google.gwt.user.User'/>
 
-  <!-- Inherit the default GWT style sheet.                       -->
-  <inherits name='com.google.gwt.user.theme.clean.Clean'/>
+    <!-- Inherit the default GWT style sheet.                       -->
+    <inherits name='com.google.gwt.user.theme.clean.Clean'/>
 
-  <inherits name="com.seanchenxi.gwt.storage.Storage"/>
-  <set-property name="storage.cache" value="false" />
-  <set-configuration-property name="storage.type.finder" value="mix" />
-  <!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
-  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
-  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+    <!-- <inherits name='com.google.gwt.user.theme.standard.Standard'/> -->
+    <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+    <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
 
-  <!-- Other module inherits                                      -->
+    <!-- Other module inherits                                      -->
+    <inherits name="com.seanchenxi.gwt.storage.Storage"/>
+    <set-property name="storage.cache" value="false"/>
+    <set-configuration-property name="storage.type.finder" value="mix"/>
+    <inherits name="org.wwarn.surveyor.SurveyorCore"/>
 
-  <!-- Specify the app entry point class.                         -->
-  <!--<entry-point class='org.wwarn.surveyor.util.client.ProjectEntryPoint'/>-->
+    <!-- Specify the app entry point class.                         -->
+    <entry-point class='org.wwarn.surveyor.util.client.StorageTest'/>
 
-  <!-- Specify the paths for translatable code                    -->
-  <source path='client'/>
-  <source path='shared'/>
+    <!-- Specify the paths for translatable code                    -->
+    <source path='client'/>
+    <source path='shared'/>
 
-  <add-linker name="xsiframe"/>
-  <!-- <set-configuration-property name="devModeRedirectEnabled" value="true"/> -->
-  
+    <add-linker name="xsiframe"/>
+    <!-- <set-configuration-property name="devModeRedirectEnabled" value="true"/> -->
+
 </module>

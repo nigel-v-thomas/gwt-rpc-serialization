@@ -25,4 +25,13 @@ public class SerializationUtil {
         return seralisedOutput;
     }
 
+    public <T> T deserialize(Class<T> testValueClass, String test) {
+        T instance;
+        try {
+            instance = storageSerializer.deserialize(testValueClass, test);
+        } catch (SerializationException e) {
+            throw new IllegalStateException("unable to serialise", e);
+        }
+        return instance;
+    }
 }
